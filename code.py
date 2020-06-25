@@ -8,9 +8,9 @@ e='repalce'
 
 f = FactorDB(n)
 f.connect()
-
+l =f.get_factor_list()
 phi =1
-for i in f.get_factor_list():
+for i in l:
     phi = phi * (i-1)
 
 
